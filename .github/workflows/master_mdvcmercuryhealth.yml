@@ -30,6 +30,6 @@ jobs:
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'mdvcmercuryhealth'
-        slot-name: 'mdvcmercuryhealth-Canary'
+        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_629c18e59afa471b9811ad55f14f81c6 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
